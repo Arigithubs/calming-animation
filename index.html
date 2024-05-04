@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enhanced Calming Animation</title>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+    }
+    body {
+        background: linear-gradient(180deg, #89CFF0, #77dd77) fixed;
+        animation: gradientBG 30s ease infinite;
+    }
+    @keyframes gradientBG {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: breathe 8s ease-in-out infinite;
+    }
+    @keyframes breathe {
+        0%, 100% {
+            transform: scale(0.8);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Calming Breathing Exercise</h1>
+</div>
+<div class="circle"></div>
+</body>
+</html>
